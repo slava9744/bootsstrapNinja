@@ -1,0 +1,2 @@
+# bootsstrapNinja
+bootstrap ucenje
