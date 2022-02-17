@@ -72,9 +72,15 @@
         </h1>
         <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, dignissimos?</p>
         <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+        <!--side bar / offcanvas-->
+        <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Explore my other books</a>
       </div>
       <div class="col-md-5 text-center d-none d-md-block">
-        <img src="/assets/ebook-cover.png" class="img-fluid" alt="ebook">
+        <!--tooltip-->
+        <span class="tt" data-bs-placement="bottom" title="Net Ninja Book Cover">
+          <img class="img-fluid" src="/assets/ebook-cover.png"  alt="ebook">
+
+        </span>
       </div>
     </div>
   </div>
@@ -343,7 +349,13 @@ Ipsum nulla numquam a rem, dolor esse dignissimos porro minima quo debitis illo 
                 <i class="bi bi-envelope-fill"></i>
               </span>
               <input type="email" class="form-control" id="email" placeholder="e.g.mario@example.com">
+              <!--tooltip-->
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Enter an Email address we can reply to.">
+                  <i class="bi bi-question-circle text-muted"></i>
 
+                </span>
+              </span>
             </div>
             <label for="name" class="form-label">Name:</label>
             <div class="input-group mb-4">
@@ -351,6 +363,12 @@ Ipsum nulla numquam a rem, dolor esse dignissimos porro minima quo debitis illo 
                 <i class="bi bi-person-fill"></i>
               </span>
               <input type="text"class="form-control" id="name" placeholder="e.g. Mario">
+              <span class="input-group-text">
+                <span class="tt" data-bs-placement="bottom" title="Pretty self explanatory really...">
+                  <i class="bi bi-question-circle text-muted"></i>
+
+                </span>
+              </span>
 
             </div>
 
@@ -381,9 +399,81 @@ Ipsum nulla numquam a rem, dolor esse dignissimos porro minima quo debitis illo 
 
 
   <!-- get updates / modal trigger -->
+<section class="bg-light">
+  <div class="container">
+    <div class="text-center">
+      <h2>Stay in the loop</h2>
+      <p class="lead">Get the latest updatest as they happen..</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="text-muted my-4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita veritatis mollitia sint exercitationem voluptatum praesentium dignissimos eius provident consectetur dicta maxime quas iure harum laudantium repellat, quam quae at nobis?
+          Quibusdam iste, excepturi quod quos, corporis quidem, expedita dolor quia nostrum recusandae praesentium aut tempora officia deserunt illum sapiente accusamus magni ab fuga vitae at porro hic. Exercitationem, quidem dignissimos!
+          Iste assumenda, voluptate sapiente explicabo recusandae reiciendis praesentium consequatur modi porro. Modi a ab officiis asperiores reiciendis eaque molestias dolore sed labore excepturi. Culpa, expedita tempore? Eos fuga eum vel!
+          Architecto, expedita sit saepe obcaecati similique cumque aspernatur natus iusto sequi officiis modi, veritatis nisi ipsam! Explicabo nesciunt eaque quia debitis. Nulla distinctio nisi rerum facilis ex consequuntur doloremque! Et.
+        </p>
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+          Register for updates
+        </button>
+
+
+        
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!--modal itself-->
+  <div class="modal fade"  id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt corporis, dolore tenetur alias facere obcaecati nihil deserunt voluptatum. Veniam quas libero alias soluta quod, consequuntur odit similique porro ea.
+          Fugiat et veniam dolorem temporibus, culpa accusamus porro sit saepe ut odit perspiciatis officiis quae magni eveniet! Repellat, deleniti! Quidem facilis magni incidunt voluptate adipisci libero labore minima veritatis tempore.
+          Quidem corporis, nesciunt laboriosam obcaecati temporibus ipsum ipsam aliquam explicabo autem at facilis adipisci. Molestiae magni expedita minima ex delectus voluptatibus similique error corporis odio, doloribus modi in, quia sapiente?</p>
+          <label for="modal-email" class="form-label">Your email address:</label>
+          <input type="email" class="form-control" id="modal-email" placeholder="e.g.mario@example.com">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--offcanvas-->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+<div class="offcanvas-body">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate necessitatibus quibusdam perspiciatis quia quis esse deserunt ex, ipsam nihil veniam molestiae! Omnis fuga, quasi vel cupiditate officiis illum inventore nam.
+  Beatae animi ullam expedita rerum quo odio veniam unde asperiores inventore sed repellat earum repudiandae, quisquam minima assumenda dignissimos voluptatibus dolore! Saepe non nisi odit ut labore facere aliquid ab.
+  Consectetur repellendus optio hic officia aliquam doloremque magni tenetur omnis eius tempore eligendi harum, nostrum dolores sequi maxime modi doloribus ea quam, quaerat expedita ut neque reprehenderit! Ratione, aspernatur. Explicabo!
+  Ullam corporis ad unde illum animi ut vel nesciunt nam veritatis. Fugit expedita iure corporis! Ut explicabo voluptatem similique velit sequi aut, ab maiores perspiciatis dicta, tempore, delectus nesciunt facilis?
+  Fugiat aut eos consequuntur alias sapiente quidem debitis, nesciunt iure repudiandae quasi illum soluta perferendis omnis ab porro cum fuga! Error natus, ipsum amet nulla eos minima fugiat eveniet exercitationem!</p>
+</div>
+  </div>
 
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script>
+
+    const tooltips = document.querySelectorAll('.tt')
+    tooltips.forEach(t => {
+    new bootstrap.Tooltip(t)  
+    });
+  </script>
 </body>
 </html>
   
